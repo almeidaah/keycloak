@@ -476,6 +476,11 @@
             </spi>
             <spi name="connectionsHttpClient">
                 <provider name="default" enabled="true"/>
+                 <properties>
+                    <property
+                       name="proxy-mappings"
+                       value="[&quot;.*\\.microsoftonline\\.com;http://squid-proxy.scibite.io:80&quot;]"/>
+                </properties>
             </spi>
             <spi name="connectionsJpa">
                 <provider name="default" enabled="true">
